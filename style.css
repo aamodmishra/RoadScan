@@ -1,0 +1,35 @@
+.header{
+    height: 50px;
+    background-color:aquamarine;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius:50%;
+    margin-left: 9px;
+    display: flex;
+    align-items: center;
+    border-style: none
+   
+    
+   
+    
+    
+    
+    
+}
+.logo-txt{
+    text-align: justify;
+    margin-left: 2px;
+    margin-top: 50px;
+    color:rgb(12, 13, 92);
+    font-size: 18px; 
+    
+    
+}
