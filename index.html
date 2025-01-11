@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadscan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <div class="header">
@@ -33,13 +34,22 @@
             </form>
         </div>
     
-        <!-- Capture Section -->
-        <div class="capture-section">
-            <h2>Capture Section</h2>
-            <p>Content for capturing will go here.</p>
-        </div>
+       
+        
+        
+       
+    </div>
+     <!-- Capture Section -->
+    <div class="capture-section">
+        <h2>Capture Image</h2>
+        <video id="video" autoplay playsinline></video>
+        <button onclick="open_camera()">Open Camera</button>
+        <button id="capture-btn" onclick="capture()">Capture</button>
+        <canvas id="canvas"></canvas>
     </div>
     
-    
+   <script src="javascript/webcam.js">
+
+   </script> 
 </body>
 </html>

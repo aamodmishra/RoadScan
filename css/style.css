@@ -1,0 +1,81 @@
+
+body{
+    align-items: center;
+}
+
+
+.main-container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Add space between the sections */
+    /* align-items: flex-start; Align items at the top */
+    gap: 20px; /* Add space between sections */
+    margin: 20px;
+    width: auto;
+}
+.upload-section {
+    
+   
+    margin: 20px;
+    padding: 10px;
+    background-color: #748ed0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+    height: 150px;
+    margin-left: 500px;
+    
+    
+}
+.capture-section{
+    
+    margin: 20px;
+    padding: 10px;
+    background-color: #748ed0;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    width: auto;
+    height: 850px;
+    align-items: center;
+   
+
+}
+.upload-section, h2 {
+    font-size: 18px;
+    color: rgb(12, 13, 92);
+    margin-bottom: 10px;
+}
+#file-upload {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* nwe */
+.capture-section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+canvas {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
