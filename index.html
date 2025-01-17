@@ -37,11 +37,20 @@
     <!-- Capture Section -->
     <div class="capture-section">
         <h2>Capture Image</h2>
-        <video id="video" autoplay playsinline></video>
+        <video id="video" autoplay></video>
+
         <button onclick="open_camera()">Open Camera</button>
         <button id="capture-btn" onclick="capture()">Capture</button>
         <canvas id="canvas"></canvas>
     </div>
+    <div class="description-section">
+        <h2>Add Description</h2>
+        <form action="" method="post">
+            <textarea id="description" name="description" rows="5" placeholder="Enter description here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
     
     <script src="javascript/webcam.js"></script>
 </body>
