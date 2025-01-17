@@ -1,75 +1,38 @@
-
-body{
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 .main-container {
-    display: flex; /* Enable flexbox layout */
-    justify-content: space-between; /* Add space between the sections */
-    /* align-items: flex-start; Align items at the top */
-    gap: 20px; /* Add space between sections */
-    margin: 20px;
-    width: auto;
-}
-.upload-section {
-    
-   
-    margin: 20px;
-    padding: 10px;
-    background-color: #748ed0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: auto;
-    height: 150px;
-    margin-left: 500px;
-    
-    
-}
-.capture-section{
-    
-    margin: 20px;
-    padding: 10px;
-    background-color: #748ed0;
-    /* border: 1px solid #ccc; */
-    border-radius: 5px;
-    width: auto;
-    height: 850px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-   
-
-}
-.upload-section, h2 {
-    font-size: 18px;
-    color: rgb(12, 13, 92);
-    margin-bottom: 10px;
-}
-#file-upload {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-/* nwe */
-.capture-section {
     margin: 20px;
+    gap: 20px;
+}
+
+.upload-section, .capture-section {
+    width: 100%;
+    max-width: 500px;
     padding: 15px;
+    background-color: #748ed0;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-video {
-    width: 100%;
-    max-width: 400px;
+h2 {
+    font-size: 20px;
+    color: rgb(12, 13, 92);
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-canvas {
-    display: block;
-    margin: 10px auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 button {
@@ -78,4 +41,27 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+video, canvas {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
