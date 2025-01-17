@@ -6,12 +6,13 @@
     <title>Roadscan</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <div class="header">
         <!-- Logo Section -->
         <div class="logo-container">
-            <img class="logo" src="istockphoto-1269785368-612x612.jpg" alt="Logo">
+            <img class="logo" src="image/istockphoto-1269785368-612x612.jpg" alt="Logo">
             <h2 class="logo-txt">Road Scan</h2>
         </div>
 
@@ -21,7 +22,8 @@
             <a href="#" class="link">Login</a>
         </div>
     </div>
-    
+    <div class="background-slideshow"></div>
+
     <div class="main-container">
         <!-- Upload Section -->
         <div class="upload-section">
@@ -29,7 +31,7 @@
             <form action="" method="post">
                 <label for="file-upload">Choose a picture:</label>
                 <input type="file" id="file-upload" name="picture" accept="image/*">
-                <button type="submit">Send</button>
+               
             </form>
         </div>
     </div>
@@ -46,10 +48,13 @@
     <div class="description-section">
         <h2>Add Description</h2>
         <form action="" method="post">
-            <textarea id="description" name="description" rows="5" placeholder="Enter description here..."></textarea>
+            <textarea id="description" name="description" rows="5" placeholder="Enter description here and also provide your details with your citizenship number..."></textarea>
             <button type="submit">Submit</button>
         </form>
     </div>
+    <footer class="footer-description">
+        <p>Road Scan is a user-friendly platform designed to improve road safety and awareness. Capture and upload images of road conditions, add detailed descriptions, and contribute to a community-driven effort to monitor and share real-time updates about road safety and infrastructure.</p>
+    </footer>
     
     
     <script src="javascript/webcam.js"></script>

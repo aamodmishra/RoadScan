@@ -57,6 +57,8 @@ video, canvas {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        justify-content: center; /* Center child items in a row */
+        flex-wrap: wrap;
     }
 }
 @media (min-width: 1024px) {
@@ -64,6 +66,17 @@ video, canvas {
         max-width: 1200px;
         margin: 0 auto;
     }
+}
+.capture-section {
+    width: 100%;
+    max-width: 500px; /* Set a fixed max width */
+    margin: 20px auto; /* Center horizontally using auto margins */
+    padding: 15px;
+    background-color: #748ed0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .description-section {
     width: 100%;
